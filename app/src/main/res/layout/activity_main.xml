@@ -19,7 +19,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!" />
+            android:text="My notes"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"/>
+
+        <Button
+            android:id="@+id/save_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:text="Save"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -108,6 +122,18 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="Battery"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/todo_list_app"
+            android:background="?attr/selectableItemBackground"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="To Do List"
             android:clickable="true"
             />
 
