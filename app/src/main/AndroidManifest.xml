@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Drawer.Drawer"></activity>
+        <activity android:name=".Drawer.Drawer"
+            android:theme="@style/DrawerTheme"></activity>
         <activity android:name=".gallery.GalleryActivity" />
         <activity android:name=".ToDoList.ToDoListActivity"
             android:label="To Do List"/>

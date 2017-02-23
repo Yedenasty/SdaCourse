@@ -10,6 +10,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +36,9 @@ public class Drawer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.mipmap.ic_palete);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Rysowiacz");
 
         simpleDrawingView = (SimpleDrawingView) findViewById(R.id.simpleDrawingView);
@@ -48,6 +52,9 @@ public class Drawer extends AppCompatActivity {
         Button blackButton = (Button) findViewById(R.id.black_button);
         Button whiteButton = (Button) findViewById(R.id.white_button);
         Button fioletekButton = (Button) findViewById(R.id.fioletek_button);
+        Button bluelightButton = (Button) findViewById(R.id.bluelight_button);
+        Button redlightButton = (Button) findViewById(R.id.redlight_button);
+        Button greenlightButton = (Button) findViewById(R.id.greenlight_button);
 
         blueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +100,30 @@ public class Drawer extends AppCompatActivity {
             public void onClick(View v) {
                 simpleDrawingView.setWielkoscgumy(10);
                 simpleDrawingView.setCurrentCollor(ContextCompat.getColor(Drawer.this, R.color.fioletek));
+            }
+        });
+        bluelightButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                simpleDrawingView.setWielkoscgumy(10);
+                simpleDrawingView.setCurrentCollor(ContextCompat.getColor(Drawer.this, R.color.blue_light));
+            }
+        });
+        redlightButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                simpleDrawingView.setWielkoscgumy(10);
+                simpleDrawingView.setCurrentCollor(ContextCompat.getColor(Drawer.this, R.color.red_light));
+            }
+        });
+        greenlightButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                simpleDrawingView.setWielkoscgumy(10);
+                simpleDrawingView.setCurrentCollor(ContextCompat.getColor(Drawer.this, R.color.green_light));
             }
         });
 

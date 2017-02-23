@@ -9,5 +9,9 @@
     <color name="green">#00FF00</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="green_light">#99FF99</color>
+    <color name="blue_light">#9999FF</color>
+    <color name="red_light">#FF9999</color>
+
 
 </resources>
